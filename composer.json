@@ -1,0 +1,17 @@
+{
+    "name": "stefan/site_buluc",
+    "autoload": {
+        "psr-4": {
+            "Stefan\\SiteBuluc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "stefan"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

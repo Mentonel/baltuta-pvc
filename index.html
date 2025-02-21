@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SC BALTUTA PROIECT PVC S.R.L</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo_firma_1.jpg" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#acasa">Acasă</a></li>
+                    <li><a href="#servicii">Servicii</a></li>
+                    <li><a href="#produse">Produse</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="acasa" class="section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Proiectul tău, <span class="highlight">în mâinile noastre</span></h1>
+                <p class="subtext">Oferim soluții profesionale și durabile pentru ferestre și uși din termopan.</p>
+                <a href="#contact" class="cta-button">Contactează-ne</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="servicii" class="section">
+        <div class="container">
+            <h2>Servicii</h2>
+            <div class="service-list">
+                <div class="service">
+                    <img src="images/icon_servicii/montaj_profesional.png" alt="Montaj profesional" class="service-icon">
+                    <h3>Montaj profesional</h3>
+                    <p>Echipa noastră asigură montaj rapid și eficient pentru uși și ferestre termopan.</p>
+                </div>
+                <div class="service">
+                    <img src="images/icon_servicii/consultanta_tehnica.png" alt="Consultanță tehnică" class="service-icon">
+                    <h3>Consultanță tehnică</h3>
+                    <p>Oferim sfaturi profesionale pentru alegerea celor mai potrivite produse pentru nevoile tale.</p>
+                </div>
+                <div class="service">
+                    <img src="images/icon_servicii/service_specializat.png" alt="Service specializat" class="service-icon">
+                    <h3>Service specializat</h3>
+                    <p>Intervenim rapid pentru reparații și întreținere, prelungind durata de viață a termopanelor.</p>
+                </div>
+                <div class="service">
+                    <img src="images/icon_servicii/livrare_minima.png" alt="Termen minim de livrare" class="service-icon">
+                    <h3>Termen minim de livrare</h3>
+                    <p>Garantăm livrarea rapidă a produselor comandate, respectând termenele stabilite.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produse" class="section">
+        <div class="container">
+            <h2>Produse</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="images/termopan/ramplast.jpg" alt="Ramplast">
+                    <h3>Ramplast</h3>
+                    <p>Ramplast oferă izolație excelentă și eficiență energetică, având profile cu 4, 5, 6 și 7 camere, potrivite pentru orice spațiu.</p>
+                </div>
+                <div class="product">
+                    <img src="images/termopan/gealan.jpeg" alt="Gealan">
+                    <h3>Gealan</h3>
+                    <p>Gealan oferă izolație termică și fonică excelentă, durabilitate și performanțe energetice superioare, fiind ideale pentru orice tip de locuință sau spațiu comercial.</p>
+                </div>
+                <div class="product">
+                    <img src="images/termopan/veka.jpg" alt="Veka">
+                    <h3>Veka</h3>
+                    <p> Veka sunt cunoscute pentru performanța lor energetică excelentă, izolația superioară și durabilitatea îndelungată, oferind soluții de înaltă calitate pentru orice tip de construcție.</p>
+                </div>
+                <div class="product">
+                    <img src="images/termopan/salamander.jpg" alt="Salamander">
+                    <h3>Salamander</h3>
+                    <p> Salamander oferă izolație termică și fonică de top, durabilitate și eficiență energetică, fiind o alegere ideală pentru confort și performanță pe termen lung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie" class="section">
+        <div class="container">
+            <h2>Galerie Lucrări</h2>
+            <div class="gallery-grid">
+                <img src="images/termopan/1.jpg" alt="Lucrare 1">
+                <img src="images/termopan/2.jpg" alt="Lucrare 2">
+                <img src="images/termopan/3.jpg" alt="Lucrare 3">
+                <img src="images/termopan/4.jpg" alt="Lucrare 4">
+                <img src="images/termopan/5.jpg" alt="Lucrare 5">
+                <img src="images/termopan/6.jpg" alt="Lucrare 6">
+                <img src="images/termopan/7.jpg" alt="Lucrare 7">
+                <img src="images/termopan/8.jpg" alt="Lucrare 8">
+                <img src="images/termopan/9.jpg" alt="Lucrare 9">
+                <img src="images/termopan/10.jpg" alt="Lucrare 10">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <p class="subtext">Dorești să ne adresezi o întrebare?<br>Contactează-ne pentru informațiile de care ai nevoie și vom reveni cu un răspuns cât mai repede posibil.</p>
+    
+            <form action="send_mail.php" method="post" class="contact-form">
+                <label for="nume">Nume *</label>
+                <input type="text" id="nume" name="nume" required>
+    
+                <label for="prenume">Prenume *</label>
+                <input type="text" id="prenume" name="prenume" required>
+    
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="telefon">Nr. telefon (opțional)</label>
+                <input type="text" id="telefon" name="telefon">
+    
+                <label for="subiect">Subiect *</label>
+                <input type="text" id="subiect" name="subiect" required>
+    
+                <label for="mesaj">Mesajul tău *</label>
+                <textarea id="mesaj" name="mesaj" rows="5" required></textarea>
+    
+                <button type="submit" class="cta-button">Trimite mesajul</button>
+            </form>
+        </div>
+    </section>
+    
+    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
