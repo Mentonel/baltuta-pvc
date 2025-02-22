@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ff9800;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #e68900;
+}
+/* Adaugă spațiu între secțiuni */
+section {
+    padding: 50px 0;
+    margin-bottom: 40px; /* Spațiu între secțiuni */
+}
+
+/* Centrează titlurile secțiunilor */
+section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Setează textul secțiunilor pe negru */
+section p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center; /* Aliniază textul */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 60px 0; /* Mai mult spațiu în interior */
+    margin-bottom: 200px; /* Mai mult spațiu între secțiuni */
+    scroll-margin-top: 90px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fier & Fier Forjat</title>
+    <link rel="stylesheet" href="css_fier/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo_firma_1.jpg" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#acasa">Acasă</a></li>
+                    <li><a href="#produse">Produse</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" class="switch-button">Produse PVC</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="acasa" class="container">
+        <h2>Proiectul tău, <span class="highlight">în mâinile noastre</span></h2>
+        <p>Realizăm porți, garduri, balustrade și alte structuri metalice, personalizate după nevoile tale. Produsele noastre sunt durabile, elegante și executate cu atenție la detalii.</p>
+    </section>
+
+    <section id="produse" class="container">
+        <h2>Produsele noastre</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/fier/icon_produse/porti_metalice.png" alt="Poartă metalică">
+                <h3>Porți Metalice</h3>
+            </div>
+            <div class="product">
+                <img src="images/fier/icon_produse/gard_metalic.png" alt="Gard metalic">
+                <h3>Garduri Metalice</h3>
+            </div>
+            <div class="product">
+                <img src="images/fier/icon_produse/scara_metalica.png" alt="Scară metalică">
+                <h3>Scări Metalice</h3>
+            </div>
+            <div class="product">
+                <img src="images/fier/icon_produse/balustrada_metalica.png" alt="Balustradă metalică">
+                <h3>Balustrade</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie" class="container">
+        <h2>Galerie</h2>
+        <div class="gallery-grid">
+            <img src="images/fier/7.jpg" alt="Lucrare fier forjat">
+            <img src="images/fier/8.jpg" alt="Lucrare fier forjat">
+            <img src="images/fier/9.jpg" alt="Lucrare fier forjat">
+            <img src="images/fier/11.jpg" alt="Lucrare fier forjat">
+            <img src="images/fier/12.jpg" alt="Lucrare fier forjat">
+            <img src="images/fier/13.jpg" alt="Lucrare fier forjat">
+            <img src="images/fier/14.jpg" alt="Lucrare fier forjat">
+            <img src="images/fier/16.jpg" alt="Lucrare fier forjat">
+            <img src="images/fier/17.jpg" alt="Lucrare fier forjat">
+            <img src="images/fier/18.jpg" alt="Lucrare fier forjat">
+            <img src="images/fier/19.jpg" alt="Lucrare fier forjat">
+            <img src="images/fier/21.jpg" alt="Lucrare fier forjat">
+            <img src="images/fier/22.jpg" alt="Lucrare fier forjat">
+            <img src="images/fier/23.jpg" alt="Lucrare fier forjat">
+            <img src="images/fier/24.jpg" alt="Lucrare fier forjat">
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>Ai nevoie de un produs personalizat? Completează formularul.</p>
+        <a href="contact-termopane.html" class="cta-button">Mergi la Formular</a>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>📧 Email: <a href="mailto:contact@baltutapvc.ro">termopane.bt@yahoo.com</a></p>
+            <p>📞 Telefon: <a href="tel:+407xxxxxxxx">0787213345</a></p>
+            <p>📞 Telefon: <a href="tel:+407xxxxxxxx">0743127701</a></p>
+            <p>&copy; 2025 SC BALTUTA PROIECT PVC S.R.L</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

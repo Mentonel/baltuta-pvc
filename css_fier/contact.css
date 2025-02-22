@@ -1,0 +1,16 @@
+#contact {
+    text-align: center; /* Centrează tot conținutul secțiunii */
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ff9800;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+    margin-top: 20px; /* Adaugă puțin spațiu deasupra */
+}
