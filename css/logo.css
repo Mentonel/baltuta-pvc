@@ -1,0 +1,11 @@
+/* === LOGO === */
+.logo {
+    height: 75px;
+    width: 200px;
+    opacity: 0.8; /* 80% transparență */
+    transition: opacity 0.3s ease-in-out; /* Efect de tranziție */
+}
+
+.logo:hover {
+    opacity: 1; /* Face logo-ul complet vizibil la hover */
+}

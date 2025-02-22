@@ -1,0 +1,62 @@
+/* Responsive – 2 coloane pe tabletă, 1 pe mobil */
+@media (max-width: 1024px) {
+    .service-list, .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 10px;
+    }
+
+    .service-list, .product-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    header {
+        padding: 5px 0; /* Reduce și mai mult dimensiunea header-ului */
+    }
+
+    .logo {
+        height: 40px; /* Logo mai mic */
+        width: auto;
+    }
+
+    nav ul {
+        flex-direction: row; /* Menține butoanele de meniu pe orizontală */
+        gap: 5px;
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Reduce fontul butoanelor */
+        padding: 5px 8px; /* Reduce padding-ul butoanelor */
+    }
+}
+@media (max-width: 1024px) {
+    .rulouri-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .plase-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .plase-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

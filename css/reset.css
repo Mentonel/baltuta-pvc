@@ -1,0 +1,15 @@
+/* === RESETARE STILURI GENERALE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* === FUNDAL GENERAL === */
+body {
+    background: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
+    color: #333;
+    line-height: 1.6;
+}
