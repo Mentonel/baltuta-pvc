@@ -60,3 +60,14 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+@media (max-width: 1024px) {
+    .service-list {
+        grid-template-columns: repeat(2, 1fr) !important; /* 2 pe rând pe tabletă */
+    }
+}
+
+@media (max-width: 768px) {
+    .service-list {
+        grid-template-columns: repeat(1, 1fr) !important; /* 1 pe rând pe mobil */
+    }
+}
