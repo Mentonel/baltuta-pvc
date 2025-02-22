@@ -92,7 +92,7 @@ nav ul li a:hover {
 }
 
 .section:hover {
-    transform: scale(1.02);
+    transform: none;
 }
 
 /* Fundal pentru Servicii – vizibilitate mai bună */
@@ -406,5 +406,26 @@ nav ul li a:hover {
 @media (max-width: 768px) {
     .product-grid {
         grid-template-columns: repeat(1, 1fr); /* 1 coloană pe mobil */
+    }
+}
+@media (max-width: 768px) {
+    /* Ajustare header pentru mobil */
+    header {
+        padding: 5px 0; /* Reduce și mai mult dimensiunea header-ului */
+    }
+
+    .logo {
+        height: 40px; /* Logo mai mic */
+        width: auto;
+    }
+
+    nav ul {
+        flex-direction: row; /* Menține butoanele de meniu pe orizontală */
+        gap: 5px;
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Reduce fontul butoanelor */
+        padding: 5px 8px; /* Reduce padding-ul butoanelor */
     }
 }
