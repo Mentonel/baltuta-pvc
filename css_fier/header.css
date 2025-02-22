@@ -8,19 +8,20 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
+
 nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 18px;
+    color: white;
+    font-size: 16px;
     padding: 10px 15px;
     transition: 0.3s;
 }
@@ -31,9 +32,9 @@ nav ul li a:hover {
 }
 header .container {
     display: flex;
-    justify-content: space-between; /* Mută elementele în extremități */
+    justify-content: space-between; /* Logo la stânga, meniu la dreapta */
     align-items: center;
-    padding: 20px;
+    padding: 15px 20px;
 }
 
 header h1 {

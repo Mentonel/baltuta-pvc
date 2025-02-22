@@ -9,3 +9,50 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+@media (max-width: 1024px) {
+    header .container {
+        flex-direction: column; /* Menținere pe orizontală pe tabletă */
+        text-align: center;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-wrap: wrap; /* Permite alinierea în mai multe rânduri dacă nu încap */
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Meniu mobil: butoanele devin verticale */
+    nav ul {
+        flex-direction: row; /* Mentine butoanele pe orizontala */
+        flex-wrap: wrap; /* Permite trecerea pe doua randuri daca nu incap */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        width: auto;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 8px 12px; /* Ajustează padding-ul pentru mobil */
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        text-align: right;
+        padding: 10px 15px;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+}
