@@ -71,3 +71,44 @@
         grid-template-columns: repeat(1, 1fr) !important; /* 1 pe rând pe mobil */
     }
 }
+@media (max-width: 1024px) {
+    #locatie {
+        width: 90%;
+    }
+
+    .locatie-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    #locatie h2 {
+        font-size: 24px;
+    }
+
+    #locatie p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    #locatie {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .locatie-container {
+        width: 100%;
+    }
+
+    #locatie h2 {
+        font-size: 22px;
+    }
+
+    #locatie p {
+        font-size: 14px;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+}
