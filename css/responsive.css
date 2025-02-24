@@ -112,3 +112,25 @@
         height: 300px;
     }
 }
+/* Responsivitate pentru dispozitive mici */
+/* ===================== */
+@media (max-width: 768px) {
+    .acasa-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .acasa-image img {
+        width: 90%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .acasa-text {
+        text-align: center;
+    }
+
+    .acasa-text p {
+        max-width: 100%;
+    }
+}

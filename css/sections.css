@@ -85,10 +85,49 @@
     padding: 150px 0; /* Mai mult spațiu pentru impact vizual */
     text-align: center;
     background: linear-gradient(to right, #ff9800, #e65100); /* Fundal gradient elegant */
-    color: white;
+    color: black;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.acasa-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 40px;
+    text-align: left;
+}
+
+/* Imaginea din stânga */
+.acasa-image img {
+    width: 350px; /* Ajustează dimensiunea imaginii */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Textul din dreapta */
+.acasa-text {
+    flex: 1;
+}
+
+/* Titlu */
+.acasa-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Paragraf */
+.acasa-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
 /* Stilizare secțiune Produse */
 #produse {
     padding-top: 140px; /* Asigură că titlul nu este acoperit de header */
