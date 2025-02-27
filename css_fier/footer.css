@@ -25,3 +25,23 @@ footer a {
 footer a:hover {
     color: #e68900;
 }
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: white; /* Culoare implicită albă */
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+/* Culoare hover pentru fiecare platformă */
+.social-icons a:hover {
+    color: #1877F2; /* Albastru Facebook */
+}
+
+.social-icons a:nth-child(2):hover {
+    color: #E4405F; /* Roz Instagram */
+}

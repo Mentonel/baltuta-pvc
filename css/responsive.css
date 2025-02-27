@@ -160,6 +160,22 @@
 
     .faq-question {
         font-size: 16px;
+        padding: 12px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-content {
+        max-width: 100%;
+    }
+
+    .faq-question {
+        font-size: 16px;
         padding: 5px;
     }
 
