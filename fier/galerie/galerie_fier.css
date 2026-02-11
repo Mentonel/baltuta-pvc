@@ -483,3 +483,48 @@ code {
     display: none;
   }
 }
+
+/* ===== Hamburger (mobil) ===== */
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+@media (max-width: 720px) {
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .header-row {
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+}
