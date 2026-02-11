@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie Fier</title>
+
+  <link rel="icon" href="images/icon_web/icon_fier.png" />
+  <link rel="stylesheet" href="/fier/galerie/galerie_fier.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" alt="Imagine lucrare">
+    <button class="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next">&#10095;</button>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/fier/fier/fier.html#acasa">
+        <img src="/fier/images/icon_logo/logo_firma_1.jpg" alt="Logo firmă" class="logo" />
+        <span class="brand-text">Galerie Fier</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="site-nav">
+        <a class="nav-link" href="/fier/fier/fier.html#acasa">Acasă</a>
+        <a class="nav-link" href="/fier/formular/formular_fier.html">Contact</a>
+        <a class="nav-link nav-cta" href="/baltuta-pvc/pvc.html">Produse PVC</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="container hero">
+    <div class="hero-card">
+      <h1>Lucrări finalizate <span class="accent"></span></h1>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section id="galerie" class="container section">
+    <div id="modelsGrid" class="models-grid"></div>
+
+    <div class="pagination">
+      <button class="page-btn" id="prevBtn" type="button">
+        <i class="fa-solid fa-chevron-left"></i> Înapoi
+      </button>
+
+      <span id="pageLabel">Pagina 1 / 1</span>
+
+      <button class="page-btn" id="nextBtn" type="button">
+        Înainte <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>📧 Email: <a href="mailto:termopane.bt@yahoo.com">termopane.bt@yahoo.com</a></p>
+      <p>📞 Telefon: <a href="tel:+40787213345">0787213345</a></p>
+      <p>📞 Telefon: <a href="tel:+40743127701">0743127701</a></p>
+      <p class="copyright">&copy; 2026 SC BALTUTA PROIECT PVC S.R.L</p>
+    </div>
+  </footer>
+
+  <script src="/fier/galerie/galerie_scripts.js"></script>
+</body>
+</html>

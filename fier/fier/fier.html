@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produse din Fier – Porți CNC</title>
+
+  <link rel="icon" href="images/icon_web/icon_fier.png" />
+  <link rel="stylesheet" href="/fier/fier/fier.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <!-- LIGHTBOX (mutat în BODY ca să fie HTML valid) -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" alt="Imagine produs">
+    <button class="lightbox-prev" type="button">&#10094;</button>
+    <button class="lightbox-next" type="button">&#10095;</button>
+  </div>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/fier/fier/fier.html">
+        <img src="/fier/images/icon_logo/logo_firma_1.jpg" alt="Logo firmă" class="logo" />
+        <span class="brand-text">Produse din Fier</span>
+      </a>
+
+      <!-- BUTON MENIU (doar pe mobil) -->
+      <button class="menu-toggle" type="button" aria-label="Deschide meniul" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="site-nav">
+        <a class="nav-link" href="/fier/fier/fier.html#acasa">Acasă</a>
+        <a class="nav-link" href="/fier/galerie/galerie_fier.html">Galerie</a>
+        <a class="nav-link" href="/fier/formular/formular_fier.html">Contact</a>
+        <a class="nav-link nav-cta" href="/baltuta-pvc/pvc.html">Produse PVC</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / ACASA -->
+  <section id="acasa" class="container hero">
+    <div class="hero-card">
+      <h1>Porți, Garduri și Panouri CNC – <span class="accent">Design modern și rezistență</span></h1>
+
+      <p>
+        Realizăm porți și garduri din fier, fier forjat și tablă decupată CNC, cu finisaje de calitate.
+        Personalizăm fiecare proiect după dimensiuni, model și stil.
+      </p>
+
+      <ul class="hero-list">
+        <li><i class="fa-solid fa-check"></i> Porți din fier și fier forjat</li>
+        <li><i class="fa-solid fa-check"></i> Garduri metalice și panouri</li>
+        <li><i class="fa-solid fa-check"></i> Tablă decupată CNC – modele unice</li>
+        <li><i class="fa-solid fa-check"></i> Balustrade, scări metalice, proiecte la comandă</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MODELE CNC (PAGINATE) -->
+  <section id="modele" class="container section">
+    <div class="section-head">
+      <h2>Modele porți decupate CNC</h2>
+    </div>
+
+    <div id="modelsGrid" class="models-grid" aria-live="polite"></div>
+
+    <div class="pagination">
+      <button class="page-btn" id="prevBtn" type="button">
+        <i class="fa-solid fa-chevron-left"></i> Înapoi
+      </button>
+
+      <div class="page-info">
+        <span id="pageLabel">Pagina 1 / 1</span>
+      </div>
+
+      <button class="page-btn" id="nextBtn" type="button">
+        Înainte <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <div class="bottom-note">
+      <p class="note-text">Prețurile se calculează la comandă, în funcție de dimensiuni și finisaje.</p>
+      <a class="btn btn-primary" href="/fier/formular/formular_fier.html">Cere ofertă</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>📧 Email: <a href="mailto:termopane.bt@yahoo.com">termopane.bt@yahoo.com</a></p>
+      <p>📞 Telefon: <a href="tel:+40787213345">0787213345</a></p>
+      <p>📞 Telefon: <a href="tel:+40743127701">0743127701</a></p>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/14qco2eVAd/?mibextid=wwXIfr" target="_blank" rel="noreferrer">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/termopane_botosani?igsh=MTQ5ZWc4a3JvZzJlMA==" target="_blank" rel="noreferrer">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+      <p class="copyright">&copy; 2026 SC BALTUTA PROIECT PVC S.R.L</p>
+    </div>
+  </footer>
+
+  <script src="/fier/fier/main.js"></script>
+</body>
+</html>

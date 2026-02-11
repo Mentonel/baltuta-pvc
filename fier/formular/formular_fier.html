@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact / Ofertă Fier – SC BALTUTA PROIECT PVC S.R.L</title>
+
+  <link rel="icon" href="images/icon_web/icon_fier.png" />
+  <link rel="stylesheet" href="formular.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/fier/fier/fier.html">
+        <img src="/fier/images/icon_logo/logo_firma_1.jpg" alt="Logo firmă" class="logo" />
+        <span class="brand-text">Contact Fier</span>
+      </a>
+
+      <!-- BUTON MENIU (doar pe mobil) -->
+      <button class="menu-toggle" type="button" aria-label="Deschide meniul" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="site-nav">
+        <a class="nav-link" href="/fier/fier/fier.html#acasa">Acasă</a>
+        <a class="nav-link" href="/fier/galerie/galerie_fier.html">Galerie</a>
+        <a class="nav-link nav-cta" href="/baltuta-pvc/pvc.html">Produse PVC</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container section">
+    <div class="hero-card">
+      <p class="subtext">
+        Dorești să ne adresezi o întrebare?<br>
+        Contactează-ne pentru informațiile de care ai nevoie și vom reveni cu un răspuns cât mai repede posibil.
+      </p>
+
+      <form name="contact" method="post" netlify class="contact-form">
+        <label for="nume">Nume *</label>
+        <input type="text" id="nume" name="nume" required>
+
+        <label for="prenume">Prenume *</label>
+        <input type="text" id="prenume" name="prenume" required>
+
+        <label for="email">E-mail (optional)</label>
+        <input type="email" id="email" name="email">
+
+        <label for="telefon">Nr. telefon *</label>
+        <input type="text" id="telefon" name="telefon" required>
+
+        <label for="subiect">Subiect *</label>
+        <input type="text" id="subiect" name="subiect" required>
+
+        <label for="mesaj">Mesajul tău *</label>
+        <textarea id="mesaj" name="mesaj" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Trimite mesajul</button>
+
+        <p class="muted" style="margin-top:12px;">
+          Prețurile se calculează la comandă, în funcție de dimensiuni și finisaje.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>📧 Email: <a href="mailto:termopane.bt@yahoo.com">termopane.bt@yahoo.com</a></p>
+      <p>📞 Telefon: <a href="tel:+40787213345">0787213345</a></p>
+      <p>📞 Telefon: <a href="tel:+40743127701">0743127701</a></p>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/14qco2eVAd/?mibextid=wwXIfr" target="_blank" rel="noreferrer">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/termopane_botosani?igsh=MTQ5ZWc4a3JvZzJlMA==" target="_blank" rel="noreferrer">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+      <p class="copyright">&copy; 2025 SC BALTUTA PROIECT PVC S.R.L</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const btn = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("site-nav");
+
+      function closeMenu() {
+        nav.classList.remove("open");
+        btn.classList.remove("open");
+        btn.setAttribute("aria-expanded", "false");
+      }
+
+      btn.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("open");
+        btn.classList.toggle("open", isOpen);
+        btn.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      // Închide meniul când dai click pe un link (pe mobil)
+      nav.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
+
+      // Închide meniul la resize spre desktop
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 720) closeMenu();
+      });
+    })();
+  </script>
+</body>
+</html>
