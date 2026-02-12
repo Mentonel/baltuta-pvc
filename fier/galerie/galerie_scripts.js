@@ -82,7 +82,7 @@ function bindPagination() {
 
 // IMPORTANT: relativ, fără "/" la început (merge pe GitHub Pages)
 async function loadModels() {
-  const res = await fetch("modele_galerie.json", { cache: "no-store" });
+  const res = await fetch("./lucrari.json", { cache: "no-store" });
   if (!res.ok) throw new Error("Nu pot încărca lucrari.json");
 
   const data = await res.json();

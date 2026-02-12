@@ -76,7 +76,7 @@ function bindPagination() {
 }
 
 async function loadModels() {
-  const res = await fetch("modele.json", { cache: "no-store" });
+  const res = await fetch("./modele.json", { cache: "no-store" });
   if (!res.ok) throw new Error("Nu pot încărca modele.json");
   const data = await res.json();
   if (!Array.isArray(data)) throw new Error("modele.json trebuie să fie un array.");
