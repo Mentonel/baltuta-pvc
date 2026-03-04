@@ -526,3 +526,82 @@ img {
   border: 1px solid rgba(0,0,0,0.08);
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
+/* ===== Mobile hamburger nav ===== */
+.nav-desktop {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* container pentru mobile: buton fier + hamburger */
+.nav-mobile-actions {
+  display: none; /* apare doar pe mobil */
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-toggle {
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.10);
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.nav-toggle:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
+}
+
+/* pe mobil, butonul CTA e puțin mai compact */
+.nav-cta-mobile {
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 74px; /* ajustează dacă vrei mai jos/sus */
+  width: min(92vw, 320px);
+  background: rgba(15, 61, 62, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  box-shadow: var(--shadow3);
+  padding: 10px;
+}
+
+.nav-mobile .nav-link {
+  display: block;
+  padding: 12px 12px;
+  border-radius: 12px;
+}
+
+.nav-mobile .nav-link:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.nav-mobile.is-open {
+  display: block;
+}
+
+/* ===== pe mobil: ascund desktop links, arăt butoanele mobile ===== */
+@media (max-width: 820px) {
+  .nav {
+    position: relative;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile-actions {
+    display: inline-flex;
+  }
+}

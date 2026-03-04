@@ -19,15 +19,32 @@ pvc_html = """
             <a class="brand" href="#acasa" aria-label="Acasă">
                 <img class="logo" src="/images/logo_firma.png" alt="BALTUTA Proiect PVC" />
                 <div class="brand-block">
-                    <div class="brand-title">Producător Autorizat Salamander, ferestre și uși fabricate din profile originale, standard
-                        german de calitate.</div>
+                    <div class="brand-title">Producător Autorizat Salamander</div>
                 </div>
             </a>
 
             <nav class="nav" aria-label="Navigație">
-                <a class="nav-link" href="#acasa">Acasă</a>
-                <a class="nav-link" href="#contact">Contact</a>
-                <a class="nav-link nav-cta" href="/fier/fier/fier.html">Produse din Fier</a>
+                <!-- Desktop links -->
+                <div class="nav-desktop">
+                    <a class="nav-link" href="#acasa">Acasă</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link nav-cta" href="/fier/fier/fier.html">Produse din Fier</a>
+                </div>
+
+                <!-- Mobile actions: hamburger + buton fier (în afara meniului) -->
+                <div class="nav-mobile-actions">
+                    <a class="nav-link nav-cta nav-cta-mobile" href="/fier/fier/fier.html">Produse din Fier</a>
+
+                    <button class="nav-toggle" type="button" aria-label="Deschide meniul" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+
+                <!-- Meniu mobil (FĂRĂ Produse din Fier) -->
+                <div class="nav-mobile" id="navMobile" hidden>
+                    <a class="nav-link" href="#acasa">Acasă</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
             </nav>
         </div>
     </header>
