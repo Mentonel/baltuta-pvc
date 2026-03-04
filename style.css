@@ -223,9 +223,9 @@ nav ul li a:hover {
     }
 }
 
-/* Stilizare secțiune Acasă */
+/* Stilizare sectiune Acasa */
 #acasa {
-    padding: 150px 0; /* Mai mult spațiu pentru impact vizual */
+    padding: 150px 0; /* Mai mult spatiu pentru impact vizual */
     text-align: center;
     background: linear-gradient(to right, #ff9800, #e65100); /* Fundal gradient elegant */
     color: white;

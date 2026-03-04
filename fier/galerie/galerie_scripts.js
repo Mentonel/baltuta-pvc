@@ -1,8 +1,3 @@
-// =============================
-// GALERIE (Lucrări finalizate)
-// Paginare 12 / pagină + Lightbox + Hamburger
-// Compatibil Local + GitHub Pages (fetch relativ)
-// =============================
 
 const PAGE_SIZE = 12;
 
