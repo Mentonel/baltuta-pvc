@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <!-- LIGHTBOX (mutat în BODY ca să fie HTML valid) -->
+  <!-- LIGHTBOX -->
   <div id="lightbox" class="lightbox">
     <span class="lightbox-close">&times;</span>
     <img class="lightbox-img" id="lightboxImg" alt="Imagine produs">
@@ -19,13 +19,18 @@
     <button class="lightbox-next" type="button">&#10095;</button>
   </div>
 
-  <!-- HEADER / NAV -->
   <header class="site-header">
     <div class="container header-row">
       <a class="brand" href="fier.html#acasa">
         <img src="/images/logo_firma.png" alt="Logo firmă" class="logo" />
         <span class="brand-text">Produse din Fier</span>
       </a>
+
+      <!-- Butoane centrate -->
+      <div class="header-center-btns">
+        <a class="btn nav-cta header-center-btn" href="../../pvc/pvc.html">Produse PVC</a>
+        <a class="btn header-center-btn-galerie" href="../galerie/galerie_fier.html">Galerie</a>
+      </div>
 
       <!-- BUTON MENIU (doar pe mobil) -->
       <button class="menu-toggle" type="button" aria-label="Deschide meniul" aria-expanded="false" aria-controls="site-nav">
@@ -38,7 +43,6 @@
         <a class="nav-link" href="fier.html#acasa">Acasă</a>
         <a class="nav-link" href="../galerie/galerie_fier.html">Galerie</a>
         <a class="nav-link" href="../formular/formular_fier.html">Contact</a>
-        <a class="nav-link nav-cta" href="../../pvc/pvc.html">Produse PVC</a>
       </nav>
     </div>
   </header>

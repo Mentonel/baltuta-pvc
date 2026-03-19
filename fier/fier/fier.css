@@ -1,8 +1,3 @@
-/* ===========================
-   THEME: Fresh Teal + Coral
-   (culori vii, dar nu stridente)
-   =========================== */
-
 * {
   box-sizing: border-box;
 }
@@ -17,11 +12,11 @@ html {
   --text: #1f2937;
   --muted: rgba(31, 41, 55, 0.72);
 
-  --header: #0f3d3e;         /* teal închis */
-  --header2: #155e63;        /* teal mediu */
+  --header: #0f3d3e;
+  --header2: #155e63;
   --line: rgba(0, 0, 0, 0.10);
 
-  --accent: #ff6b6b;         /* coral */
+  --accent: #ff6b6b;
   --accent2: #f25555;
   --accentSoft: rgba(255, 107, 107, 0.14);
 
@@ -78,11 +73,12 @@ img {
 }
 
 .header-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
   align-items: center;
-  justify-content: space-between;
   gap: 14px;
   padding: 14px 0;
+  position: relative;
 }
 
 .brand {
@@ -99,7 +95,7 @@ img {
   object-fit: contain;
   padding: 8px;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.12); /* ascunde diferența de fundal */
+  background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -107,6 +103,44 @@ img {
   font-weight: 900;
   letter-spacing: 0.3px;
 }
+
+/* ===== Header butoane centrate ===== */
+
+.header-center-btns {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 1;
+}
+
+.header-center-btn {
+  font-size: 15px;
+  padding: 11px 18px;
+  white-space: nowrap;
+}
+
+.header-center-btn-galerie {
+  font-size: 15px;
+  padding: 11px 18px;
+  border-radius: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: background 0.2s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.header-center-btn-galerie:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+/* ===== Nav ===== */
 
 .nav {
   display: flex;
@@ -532,12 +566,9 @@ img {
     display: none;
   }
 }
-/* ===========================
-   MOBILE HAMBURGER MENU (FIER) - V2 (mai compact + estetic)
-   (lipește la final în fier.css)
-   =========================== */
 
-/* Butonul hamburger (ascuns pe desktop) */
+/* ===== MOBILE HAMBURGER MENU ===== */
+
 .menu-toggle {
   display: none;
   width: 46px;
@@ -561,7 +592,6 @@ img {
   transition: transform 0.18s ease, opacity 0.18s ease;
 }
 
-/* animație X când e deschis */
 .menu-toggle.open span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -572,11 +602,9 @@ img {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* ===== Responsive Header Nav (mai compact) ===== */
 @media (max-width: 720px) {
-  /* header mai mic pe mobil */
   .header-row {
-    position: relative; /* necesar pt .nav absolut */
+    position: relative;
     padding: 10px 0;
     gap: 10px;
   }
@@ -605,7 +633,17 @@ img {
     width: 20px;
   }
 
-  /* nav dropdown (card compact) */
+  .header-center-btns {
+    gap: 6px;
+  }
+
+  .header-center-btn,
+  .header-center-btn-galerie {
+    font-size: 11px;
+    padding: 7px 9px;
+    border-radius: 10px;
+  }
+
   .nav {
     display: none;
     position: absolute;
@@ -622,7 +660,7 @@ img {
   .nav.open {
     display: grid;
     gap: 8px;
-    grid-template-columns: 1fr 1fr; /* grupare pe 2 coloane */
+    grid-template-columns: 1fr 1fr;
     align-items: stretch;
     max-height: 60vh;
     overflow: auto;
@@ -646,14 +684,14 @@ img {
     transform: none;
   }
 
-  /* CTA pe un rând separat */
   .nav-cta {
     grid-column: 1 / -1;
     background: var(--accent);
   }
+}
 
-  /* ascunde textul brand dacă nu încape */
-  @media (max-width: 360px) {
-    .brand-text { display: none; }
+@media (min-width: 721px) {
+  .nav .nav-link[href="../galerie/galerie_fier.html"] {
+    display: none;
   }
 }
